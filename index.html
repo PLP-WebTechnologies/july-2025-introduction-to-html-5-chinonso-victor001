@@ -1,120 +1,70 @@
-<!--We start by declaring the document type and version of HTML (HTML5)-->
 <!DOCTYPE html>
 
-<!--Starts the HTML document and sets the language to English-->
-<html lang="eng">
+<html lang="en">
 
-<!--Webpage information-->
-<head>
-    <meta charset="UTF-8"> <!--this supports all character/symbols -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--makes the site responsive on all screens-->
-    <title>OKORIE CHINONSO</title> <!--this shows on the browser tab-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Basics Of HTML">
+        <meta name="author" content="OKORIE CHINONSO">
+        <meta name="keywords" content="Basics of HTML, Structure of HTML, HTML5">
+        <title>OKORIE CHINONSO'S WEBSITE</title>
+    </head>
 
-    <link rel="stylesheet" href="style.css" /> <!--link to external cascading style sheet (CSS)-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" /> <!--google font added for font styling-->
-    <link rel="icon" href="assets/favicon.ico/ nonso.ico" type="image/x-icon" /> <!--favicon icon added on the tab-->
-</head>
-
-<!--Website Information-->
-<body>
     <header>
-        <a href="#" class="logo">Chinonso</a>
-
         <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#interests">Interests</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <a href="#section-html"><b>About HTML</b></a>
+            <a href="#section-HTML5"><b>About HTML5</b></a>
+            <!--Logo will also go here-->           
+        </nav>        
     </header>
+    
+    <main>
+        
+        <body>
+            <h1 id="section-html">What Is HTML?</h1>
+            <hr>
+            <p>HTML stands for <b>Hyper-Text Mark-up Language.<i></i></b> It is used to add content to our webpage.</p>
+            <h3>Examples of Contents we can add on HTML includes:</h3>
+            <ol type="a">
+                <li>Images</li>
+                <li>Texts</li>
+                <li>Videos like:</li>
+                    <ul type="disc">
+                    <li>Home-Made Videos</li>
+                    <li>You-tube Videos</li>
+                    </ul>
+                <li>Audio</li>        
+            </ol>
 
-    <section class="home">
-       <div class="home-wrapper">
-        <div class="home-img">
-            <img src="assets/vic.jpg" alt="">
-         </div>
-           
-        <div class="home-content">
-            <h1>Hi, It's<span> Chinonso</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I bring your creative mind to life on the web. Let's develop a website that solve world problems today.</p>           
+            <span><img src= assets/logo.jpg alt="an image rendered by HTML5" width="200"></span> <span><img src= assets/logo.jpg alt="an image rendered by HTML5" width="200"></span>
+
+            <br>
             
-            <nav><a href="#contact" class="btn">Hire Me</a></nav>
-         </div>
-        </div>        
-                
-    </section> 
+            <h2 id="section-HTML5">What Then is HTML5?</h2>
+            <hr>
+            <p><b>HTML5</b> is a major revision of the Hyper-Text Mark-up Language (HTML). It serves as the foundation of modern web development. Its purpose is to enhance the structure,functionality, and flexibility of webpages.</p>
+                <h3>HTML5 Contents are as follows:</h3>
+            <dl>
+                <dt><b><i>Sematic Elements:</i></b></dt>
+                <dd>- These includes elements like &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, and &lt;aside&gt;. These elements are introduced by HTML5 to provide better structure and clarity to webpage content. </dd>
+                <br>
+                <dt><b><i>Multi-media Elements:</i></b></dt>
+                <dd>- This inlude elements like &lt;video&gt;, and &lt;audio&gt;, which allows developers to embed media directly into the webpages without relying on external plugins like flash.</dd>
+            </dl>
+            
+            <br>
 
+            <h3>Additional Resources</h3>
+            <p>To gain more knowlege and insights about HTML visit <a href="https://google.com" target="_blank">Google.com</a> to browse more on the subject.</p>            
+        </body>
+    
+    </main>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>A business manager and analyst, with ground-breaking experience in software development. Efficient in leading teams, improving performance, and increasing conversion rates, through strategic planning and client engagement.<br>I'm passionate about transforming ideas into functional, beautiful websites that solve problems and provide value.</p>          
-        </div>
-    </section>
+    <a href="#"><b>Jump to top</b></a> 
+    
+    <br>
 
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <p>B.Sc in Business Management - University of Nigeria, Nsukka (2019-2023)</p>
-            <a href="assets/Chinonso Okorie - Resume (1).pdf" download class="btn">My Resume</a>
-        </div>   
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <u1 class="skill-list">
-                <li>Python</li>
-                <li>Node.Js</li>
-                <li>Java</li>
-                <li>CSS</li>
-                <li>HTML</li>
-            </u1>
-        </div>
-    </section>
-
-    <section id="interests">
-        <div class="container">
-            <h2>Interests</h2>
-            <p>Thrilled by the future of web technologies, open source collaboration, and how software development drives economic growth</p>
-        </div>
-    </section>
-
-    <section id="project">
-        <div class="container">
-            <h2>Project: Portfolio Website</h2>
-            <p>Developed an impecabble, professional portfolio website, and succesfully hosted it on GitHub</p>
-            <a href="https://github.com/chinonso-victor001/website-portfolio" class="btn">View My Project</a>        
-        </div>
-    </section>
-
-    <section id="contact">
-        <div id="container">
-            <h2>Contact Me:</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required />
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="you@example" required />
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-
-                <button type="submit">Send Message</button>                
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Okorie Chinonso. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
+    <footer>&copy;Okorie Chinonso 2025</footer>
+    
 </html>
